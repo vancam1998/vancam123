@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <report
+                id="manage_promotion_report"
+                model="manage.promotion"
+                string="Manage Promotion card"
+                report_type="qweb-html"
+                name="loyalty_program.manage_promotion_report"
+                file="loyalty_program.manage_promotion_report"
+              />
+
+        <template id="report_ModelName_view">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>
